@@ -54,6 +54,12 @@
   /* Chapter badge */
   .ch-badge { background: var(--blue); color: #fff; border-radius: 20px; padding: 2px 10px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; }
 
+  /* PDF chapter link */
+  .pdf-link { margin-left: auto; font-size: 0.72rem; font-weight: 600; color: var(--gold); text-decoration: none; background: #fdf6e3; border: 1px solid #f5e3b3; border-radius: 6px; padding: 3px 9px; white-space: nowrap; transition: all 0.15s; }
+  .pdf-link:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
+  .card h2 { flex-wrap: wrap; }
+  @media (max-width: 600px) { .pdf-link { margin-left: 0; } }
+
   /* Home page stats */
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
   .stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; text-align: center; }
@@ -164,6 +170,7 @@
   <div class="card" style="border-left: 4px solid var(--gold);">
     <h2>Welcome to Basic Appraisal Self-Study</h2>
     <p>This site is based on the California State Board of Equalization <strong>Assessors' Handbook Section 501 — Basic Appraisal</strong> and the companion <strong>Self-Study Review Questions</strong>. Use each section to prepare for property tax appraisal assessments.</p>
+    <p style="margin-top:0.75rem;"><a href="AH-501-Basic-Appraisal.pdf" target="_blank" rel="noopener" style="display:inline-block;background:var(--blue);color:#fff;text-decoration:none;border-radius:6px;padding:0.5rem 1.1rem;font-size:0.85rem;font-weight:600;">📖 Open the Full Handbook PDF ↗</a></p>
   </div>
 
   <div class="stats">
@@ -226,8 +233,16 @@
 <!-- ==================== STUDY GUIDE ==================== -->
 <div id="tab-study" class="tab-panel">
 
+  <div class="card" style="background:var(--blue);color:#fff;border-color:var(--blue);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+    <div style="flex:1;min-width:220px;">
+      <h2 style="color:var(--gold-light);margin-bottom:0.35rem;">📖 Source Handbook Included</h2>
+      <p style="font-size:0.85rem;opacity:0.9;margin:0;">Each chapter below links to the exact page in the official BOE handbook (AH-501). Use the <strong>📄 Handbook</strong> buttons to jump straight to the source text.</p>
+    </div>
+    <a href="AH-501-Basic-Appraisal.pdf" target="_blank" rel="noopener" style="background:var(--gold);color:#fff;text-decoration:none;border-radius:8px;padding:0.6rem 1.25rem;font-size:0.9rem;font-weight:600;white-space:nowrap;">Open Full PDF ↗</a>
+  </div>
+
   <div class="card">
-    <h2><span class="ch-badge">CH 1</span> Theory of Value</h2>
+    <h2><span class="ch-badge">CH 1</span> Theory of Value <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=8" target="_blank" rel="noopener">📄 Handbook p.1 ↗</a></h2>
     <h3>What is an Appraisal?</h3>
     <p>Appraisal is the process of <strong>estimating the value of specific property at a stated time and place</strong>. A formal appraisal is supportable based on facts, data, and methods, and is backed by a written report. Three fundamental problems: (1) define value, (2) define the property rights to be valued, (3) determine the proper method.</p>
     <h3>Prerequisites of Economic Value</h3>
@@ -259,7 +274,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 2</span> Standard of Value for Property Tax Appraisal</h2>
+    <h2><span class="ch-badge">CH 2</span> Standard of Value for Property Tax Appraisal <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=15" target="_blank" rel="noopener">📄 Handbook p.8 ↗</a></h2>
     <h3>Fair Market Value (Revenue and Taxation Code §110)</h3>
     <p>The <strong>standard for California property tax</strong>. Defined as the amount of cash or equivalent value that property would bring if exposed for sale in the open market under conditions in which:</p>
     <ul>
@@ -286,7 +301,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 3</span> Property Concepts</h2>
+    <h2><span class="ch-badge">CH 3</span> Property Concepts <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=26" target="_blank" rel="noopener">📄 Handbook p.19 ↗</a></h2>
     <h3>Types of Property</h3>
     <ul>
       <li><strong>Real Property</strong> — possession, claim to, ownership of, or right to possession of land; mines, minerals, quarries; standing timber; improvements</li>
@@ -334,7 +349,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 4</span> Economic Framework for Real Property Appraisal</h2>
+    <h2><span class="ch-badge">CH 4</span> Economic Framework for Real Property Appraisal <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=45" target="_blank" rel="noopener">📄 Handbook p.38 ↗</a></h2>
     <h3>The Real Estate Market</h3>
     <p>A <strong>market</strong> is the organized action between buyers (demand) and sellers (supply) that permits trade. Real estate markets are classified by geographic boundaries, property type, or scope of participants.</p>
     <h3>Special Characteristics of Real Estate</h3>
@@ -386,7 +401,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 5</span> Measurement of Value</h2>
+    <h2><span class="ch-badge">CH 5</span> Measurement of Value <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=66" target="_blank" rel="noopener">📄 Handbook p.59 ↗</a></h2>
     <h3>Steps in the Appraisal Process</h3>
     <ol>
       <li>Definition of the appraisal problem</li>
@@ -404,7 +419,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 6</span> Approaches to Value</h2>
+    <h2><span class="ch-badge">CH 6</span> Approaches to Value <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=80" target="_blank" rel="noopener">📄 Handbook p.73 ↗</a></h2>
     <h3>Cost Approach</h3>
     <p><strong>Three-step process:</strong></p>
     <ol>
@@ -457,7 +472,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 7</span> Personal Property Appraisal Program</h2>
+    <h2><span class="ch-badge">CH 7</span> Personal Property Appraisal Program <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=118" target="_blank" rel="noopener">📄 Handbook p.111 ↗</a></h2>
     <p>Personal property differs from real property in that it is generally <strong>movable</strong> and <strong>not permanently annexed</strong> to land.</p>
     <h3>Key Concepts</h3>
     <ul>
@@ -479,7 +494,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="ch-badge">CH 8 / APP</span> Special Topics &amp; Administration</h2>
+    <h2><span class="ch-badge">CH 8 / APP</span> Special Topics &amp; Administration <a class="pdf-link" href="AH-501-Basic-Appraisal.pdf#page=128" target="_blank" rel="noopener">📄 Handbook p.121 ↗</a></h2>
     <h3>Manufactured Homes (Mobilehomes)</h3>
     <p>Classification as real or personal property depends on permanency of installation. Site value is assessed separately.</p>
     <h3>Construction in Progress</h3>
